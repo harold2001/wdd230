@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
   header {
     justify-content: center;
     gap: 3rem;
@@ -8,23 +8,25 @@
     height: 60px;
   }
 
-  nav ul {
+  .navigation {
     display: flex;
+    flex-direction: row;
     font-size: 1.2rem;
+    background-color: transparent;
   }
 
-  nav ul li {
+  .navigation li {
     flex: 1 1 100%;
   }
 
   main {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 700px 250px;
     grid-template-rows: 50px 260px;
     justify-content: center;
     align-items: center;
     height: calc(85vh - 210px);
     grid-gap: 0.7rem;
-    padding: 25px 0;
+    padding: 25px 10px;
   }
 
   .card {
@@ -59,6 +61,14 @@
   }
 
   footer p:first-child {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navigation a {
     display: block;
   }
 }
