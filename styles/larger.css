@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
   header {
     justify-content: center;
     gap: 3rem;
@@ -8,11 +8,20 @@
     height: 60px;
   }
 
+  nav.dark {
+    background-color: #000000;
+  }
+
+  nav.dark > .navigation {
+    background-color: #333;
+  }
+
   .navigation {
     display: flex;
     flex-direction: row;
     font-size: 1.2rem;
-    background-color: transparent;
+    background-color: #000000;
+    max-width: 700px;
   }
 
   .navigation li {
