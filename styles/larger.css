@@ -4,6 +4,10 @@
     gap: 3rem;
   }
 
+  header > span {
+    width: 25%;
+  }
+
   nav {
     height: 60px;
   }
