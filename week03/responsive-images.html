@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harold Carazas - WDD 230 - Responsive Images</title>
+    <meta name="description" content="Practice week 03 - responsive images">
+    <meta name="author" content="Harold Carazas">
+    <meta property="og:title" content="Harold Carazas - WDD 230 - Responsive Images">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harold2001.github.io/wdd230/">
+    <meta property="og:image"
+        content="https://www.travelandleisure.com/thmb/Xw-LpgtezL-SpZHoNVEdKtN-ejM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lima-peru-LIMATG0721-88067978d649415d9b31fbafef46dbd8.jpg">
+    <meta property="og:description" content="Practice week 03">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Picture of the Lima Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
