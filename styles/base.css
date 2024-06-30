@@ -37,11 +37,15 @@ nav {
 }
 
 main {
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-gap: 1rem;
+}
+
+main > *:not(:first-child) {
+  margin: 0 10px;
 }
 
 h1 {
@@ -77,6 +81,11 @@ footer p:first-child {
   display: grid;
   grid-gap: 0.5rem;
   margin-bottom: 10px;
+}
+
+#limaMap {
+  display: block;
+  margin: 20px auto;
 }
 
 /* Mobile view navigation */
@@ -187,4 +196,34 @@ main.dark {
 main.dark h2,
 main.dark h1 {
   color: #eee;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.herolabel {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: radial-gradient(#fff, #4d5b97);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+  /* Buenas */
+}
+
+.herolabel p {
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'Great Vibes', serif;
 }
