@@ -37,7 +37,6 @@ header {
   height: 80px;
   position: relative;
   padding: 0 20px;
-  /* gap: 1rem; */
 }
 
 nav {
@@ -301,17 +300,18 @@ footer > div {
   padding: 20px;
 }
 
-.contentCards h1 {
+.contentCards h2 {
   font-weight: 400;
   font-size: 1.6rem;
   font-family: var(--heading-font);
+  margin: 20px 0;
 }
 
-.contentCards h2 {
+.contentCards h3 {
   font-weight: 400;
   font-size: 1.4rem;
   font-family: var(--heading-font);
-  margin: 20px 0 8px 0;
+  margin: 20px 0 10px 0;
 }
 
 .contentCards ul {
