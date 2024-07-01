@@ -1,31 +1,39 @@
 const hamButton = document.querySelector('#menu');
-// const navigation = document.querySelector('.navigation');
-// const darkButton = document.querySelector('#darkBtn');
-// const main = document.querySelector('main');
 const nav = document.querySelector('nav');
-// const visitsDisplay = document.querySelector(".visits");
-// let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-const year = new Date().getFullYear()
+const year = new Date().getFullYear();
+const lastVisitMessage = getLastVisitMessage();
 
-document.querySelector('#year').textContent += year
-document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`
+function getLastVisitMessage() {
+  const now = new Date();
+  const previousString = localStorage.getItem('lastVisit');
+  localStorage.setItem('lastVisit', now.toISOString());
 
-// if (numVisits !== 0) {
-// 	visitsDisplay.textContent = numVisits;
-// } else {
-// 	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
-// }
-// numVisits++;
-// localStorage.setItem("numVisits-ls", numVisits);
+  if (!previousString) {
+    return 'Welcome! Let us know if you have any questions';
+  }
+
+  const lastVisit = new Date(previousString);
+  const timeDiff = now - lastVisit;
+  const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+  if (daysDiff < 1) {
+    return 'Back so soon! Awesome!';
+  } else if (daysDiff === 1) {
+    return 'You last visited 1 day ago.';
+  } else {
+    return `You last visited ${daysDiff} days ago.`;
+  }
+}
+
+document.querySelector(
+  '#lastVisitSection'
+).innerHTML = `<p><strong>Visit Message:</strong> ${lastVisitMessage}</p>`;
+document.querySelector('#year').textContent += year;
+document.querySelector(
+  '#lastModified'
+).textContent = `Last Modification: ${document.lastModified}`;
 
 hamButton.addEventListener('click', () => {
   nav.classList.toggle('open');
   hamButton.classList.toggle('open');
 });
-
-// darkButton.addEventListener('click', () => {
-//   main.classList.toggle('dark');
-//   nav.classList.toggle('dark');
-// });
-
-
