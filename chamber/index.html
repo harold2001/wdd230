@@ -15,82 +15,90 @@
         content="https://i0.wp.com/www.exploorperu.com/wp-content/uploads/2023/10/Historic-Lima-Walking-through-the-Colonial-and-Historic-Center-exploorperu-blog-historical-background.png?fit=775%2C480&ssl=1">
     <meta property="og:description"
         content="The Lima Chamber of Commerce is a powerful tool that allows its members to participate in local businesses and other organizations. We boost the productivity of various sectors and provide informational, statistical and economic support.">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <img src="#" alt="Lima Chamber of Commerce logo">
-        <h1>Lima</h1>
-        <span>Chamber of Commerce</span>
-    </header>
-    <nav>
+        <div>
+            <h1 class="limaTitle">Lima</h1>
+            <span class="chamberTitle">Chamber of Commerce</span>
+        </div>
         <button id="menu"></button>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <img src="#" alt="Chamber of Commerce Image">
-        <button>Join the Chamber</button>
-        <section>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/lima-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/lima-medium.webp">
+                <img src="images/lima-large.webp" alt="Picture of Lima, Peru" width="1500" height="750" loading="lazy">
+            </picture>
+            <div class="herolabel">
+                <button>Join the Chamber</button>
+            </div>
+        </div>
+        <section class="firstSections" id="eventsSection">
             <h2>Events</h2>
-            <h3>Event 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quia, dolorem aliquid quos dignissimos fuga
-                labore iure a inventore nobis.</p>
+            <h3>Ribbon Cutting - The Diamond Shack</h3>
+            <p>Join us for the grand opening of the Diamond Shack, Thursday at 1:00 p.m.</p>
+            <span>more info...</span>
         </section>
-        <section>
+        <section class="firstSections" id="weatherSection">
             <h2>Weather</h2>
-            <img src="#" alt="Event image">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, a.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quia, dolorem aliquid quos dignissimos fuga
-                labore iure a inventore nobis.</p>
+            <img src="https://picsum.photos/50" alt="Event image">
+            <p>33°C</p>
+            <p><strong>Partly Cloudy</strong></p>
+            <p>Humidity:</p>
+            <p>35%</p>
+            <p>Wind Chill:</p>
+            <p>N/A</p>
         </section>
-        <h2>Member Spotlights</h2>
-        <section>
-            <h2>Thankful Transport</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt placeat quae officiis debitis.
-                Necessitatibus officia, sunt voluptate odit ipsam qui a culpa vel quae consectetur numquam eveniet cum,
-                quisquam nulla distinctio, quia molestias iusto nihil hic. Optio error totam debitis sapiente eos quos
-                ab eaque omnis voluptatum sequi id, ducimus nulla, repellendus beatae? Rem autem tempore fugiat
-                architecto facere voluptas nihil magnam libero voluptatum cumque doloribus placeat, recusandae
-                praesentium unde blanditiis! Corrupti culpa cum officiis voluptatibus enim quasi ratione iure sed quae,
-                dolor eos, eveniet perspiciatis doloremque quam eligendi inventore cumque ducimus porro ipsum! Delectus
-                voluptatum molestiae provident quam excepturi.</p>
-        </section>
-        <section>
-            <h2>Code Primera</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt placeat quae officiis debitis.
-                Necessitatibus officia, sunt voluptate odit ipsam qui a culpa vel quae consectetur numquam eveniet cum,
-                quisquam nulla distinctio, quia molestias iusto nihil hic. Optio error totam debitis sapiente eos quos
-                ab eaque omnis voluptatum sequi id, ducimus nulla, repellendus beatae? Rem autem tempore fugiat
-                architecto facere voluptas nihil magnam libero voluptatum cumque doloribus placeat, recusandae
-                praesentium unde blanditiis! Corrupti culpa cum officiis voluptatibus enim quasi ratione iure sed quae,
-                dolor eos, eveniet perspiciatis doloremque quam eligendi inventore cumque ducimus porro ipsum! Delectus
-                voluptatum molestiae provident quam excepturi.</p>
-        </section>
-        <section>
-            <h2>Build A Treefort</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt placeat quae officiis debitis.
-                Necessitatibus officia, sunt voluptate odit ipsam qui a culpa vel quae consectetur numquam eveniet cum,
-                quisquam nulla distinctio, quia molestias iusto nihil hic. Optio error totam debitis sapiente eos quos
-                ab eaque omnis voluptatum sequi id, ducimus nulla, repellendus beatae? Rem autem tempore fugiat
-                architecto facere voluptas nihil magnam libero voluptatum cumque doloribus placeat, recusandae
-                praesentium unde blanditiis! Corrupti culpa cum officiis voluptatibus enim quasi ratione iure sed quae,
-                dolor eos, eveniet perspiciatis doloremque quam eligendi inventore cumque ducimus porro ipsum! Delectus
-                voluptatum molestiae provident quam excepturi.</p>
-        </section>
+        <h2 id="spotlightsSubtitle">Member Spotlights</h2>
+        <div id="spotlightsContainer">
+            <section class="spotlightsCard">
+                <h2>Thankful Transport</h2>
+                <p>"We get it there for you!</p>
+                <p>hello@thankfultransport.com</p>
+                <p>+999-9999-9999</p>
+                <p>Website</p>
+            </section>
+            <section class="spotlightsCard">
+                <h2>Code Primera</h2>
+                <p>After school coding!</p>
+                <p>contact@codeprimera.com</p>
+                <p>+999-9999-9999</p>
+                <p>Website</p>
+            </section>
+            <section class="spotlightsCard">
+                <h2>Build A Treefort</h2>
+                <p>Over 1000 Plans!</p>
+                <p>builda@treefort.com</p>
+                <p>+888-8888-8888</p>
+                <p>Website</p>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>Lima Chamber of Commerce</p>
-        <p>
+        <div>
+            <span class="limaTitle">Lima</span>
+            <span class="chamberTitle">Chamber of Commerce</span>
+        </div>
+        <p id="footerP">
             <span id="year">&copy;</span>
             <span>Harold Duane Carazas Mires</span>
             <span>WDD 230</span>
@@ -98,6 +106,7 @@
         </p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
