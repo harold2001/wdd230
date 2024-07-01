@@ -2,6 +2,7 @@ const hamButton = document.querySelector('#menu');
 const nav = document.querySelector('nav');
 const year = new Date().getFullYear();
 const lastVisitMessage = getLastVisitMessage();
+const lastVisitSection = document.querySelector('#lastVisitSection');
 
 function getLastVisitMessage() {
   const now = new Date();
@@ -25,9 +26,10 @@ function getLastVisitMessage() {
   }
 }
 
-document.querySelector(
-  '#lastVisitSection'
-).innerHTML = `<p><strong>Visit Message:</strong> ${lastVisitMessage}</p>`;
+if (lastVisitSection) {
+  lastVisitSection.innerHTML += `<p><strong>Visit Message:</strong> ${lastVisitMessage}</p>`;
+}
+
 document.querySelector('#year').textContent += year;
 document.querySelector(
   '#lastModified'
