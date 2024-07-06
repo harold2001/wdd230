@@ -42,56 +42,23 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <picture>
-                <source media="(max-width: 400px)" srcset="images/lima-small.webp">
-                <source media="(max-width: 1000px)" srcset="images/lima-medium.webp">
-                <img src="images/lima-large.webp" alt="Picture of Lima, Peru" width="1500" height="750" loading="lazy">
-            </picture>
-            <div class="herolabel">
-                <button>Join the Chamber</button>
-            </div>
-        </div>
-        <section class="firstSections" id="eventsSection">
-            <h2>Events</h2>
-            <h3>Ribbon Cutting - The Diamond Shack</h3>
-            <p>Join us for the grand opening of the Diamond Shack, Thursday at 1:00 p.m.</p>
-            <span>more info...</span>
-        </section>
-        <section class="firstSections" id="weatherSection">
-            <h2>Weather</h2>
-            <img src="https://picsum.photos/50" alt="Event image">
-            <p>33°C</p>
-            <p><strong>Partly Cloudy</strong></p>
-            <p>Humidity:</p>
-            <p>35%</p>
-            <p>Wind Chill:</p>
-            <p>N/A</p>
-        </section>
-        <h2 id="spotlightsSubtitle">Member Spotlights</h2>
-        <div id="spotlightsContainer">
-            <section class="spotlightsCard">
-                <h2>Thankful Transport</h2>
-                <p>"We get it there for you!</p>
-                <p>hello@thankfultransport.com</p>
-                <p>+999-9999-9999</p>
-                <p>Website</p>
-            </section>
-            <section class="spotlightsCard">
-                <h2>Code Primera</h2>
-                <p>After school coding!</p>
-                <p>contact@codeprimera.com</p>
-                <p>+999-9999-9999</p>
-                <p>Website</p>
-            </section>
-            <section class="spotlightsCard">
-                <h2>Build A Treefort</h2>
-                <p>Over 1000 Plans!</p>
-                <p>builda@treefort.com</p>
-                <p>+888-8888-8888</p>
-                <p>Website</p>
-            </section>
-        </div>
+        <h1>Applicant Form</h1>
+        <form method="get" action="thankyou.html">
+            <label>First Name* <input type="text" name="fname" id="fname" required></label>
+            <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+            <label>Position <input type="text" name="position" id="position" pattern="[A-Za-z\- ]{7,}"
+                    title="Please enter a valid title or position (minimum 7 characters, only alphabets, hyphens, and spaces)"></label>
+            <label>Email* <input type="email" name="email" id="email" required placeholder="someonme@gmail.com"></label>
+            <label>Phone* <input type="tel" name="phone" id="phone" required></label>
+            <label>Organization Name* <input type="text" name="orgName" id="orgName" required></label>
+            <div>Membership Levle</div>
+            <label><input type="radio" name="memberLevel" value="np"> NP Membership</label>
+            <label><input type="radio" name="memberLevel" value="bronze"> Bronze Membership</label>
+            <label><input type="radio" name="memberLevel" value="silver"> Silver Membership</label>
+            <label><input type="radio" name="memberLevel" value="gold"> Gold Membership</label>
+            <label>Organization Description <textarea name="orgDescription" id="orgDescription"></textarea></label>
+            <button type="submit">Apply</button>
+        </form>
     </main>
     <footer>
         <div>
