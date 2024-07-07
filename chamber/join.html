@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lima Chamber of Commerce</title>
+    <title>Lima Chamber of Commerce | Join</title>
     <meta name="description"
         content="The Lima Chamber of Commerce is a powerful tool that allows its members to participate in local businesses and other organizations. We boost the productivity of various sectors and provide informational, statistical and economic support.">
     <meta name="author" content="Harold Carazas">
@@ -41,24 +41,69 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Applicant Form</h1>
-        <form method="get" action="thankyou.html">
-            <label>First Name* <input type="text" name="fname" id="fname" required></label>
-            <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-            <label>Position <input type="text" name="position" id="position" pattern="[A-Za-z\- ]{7,}"
-                    title="Please enter a valid title or position (minimum 7 characters, only alphabets, hyphens, and spaces)"></label>
-            <label>Email* <input type="email" name="email" id="email" required placeholder="someonme@gmail.com"></label>
-            <label>Phone* <input type="tel" name="phone" id="phone" required></label>
-            <label>Organization Name* <input type="text" name="orgName" id="orgName" required></label>
-            <div>Membership Levle</div>
-            <label><input type="radio" name="memberLevel" value="np"> NP Membership</label>
-            <label><input type="radio" name="memberLevel" value="bronze"> Bronze Membership</label>
-            <label><input type="radio" name="memberLevel" value="silver"> Silver Membership</label>
-            <label><input type="radio" name="memberLevel" value="gold"> Gold Membership</label>
-            <label>Organization Description <textarea name="orgDescription" id="orgDescription"></textarea></label>
-            <button type="submit">Apply</button>
+    <main id="joinMain">
+        <form method="get" action="thankyou.html" id="joinForm">
+            <fieldset>
+                <legend>User information</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Position <input type="text" name="position" id="position" pattern="[A-Za-z\- ]{7,}"
+                        title="Please enter a valid title or position (minimum 7 characters, only alphabets, hyphens, and spaces)"></label>
+                <label>Email* <input type="email" name="email" id="email" required
+                        placeholder="someonme@gmail.com"></label>
+                <label>Phone number* <input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+            <fieldset id="membershipFieldset">
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="memberLevel" value="np"> NP Membership</label>
+                <label><input type="radio" name="memberLevel" value="bronze"> Bronze Membership</label>
+                <label><input type="radio" name="memberLevel" value="silver"> Silver Membership</label>
+                <label><input type="radio" name="memberLevel" value="gold"> Gold Membership</label>
+            </fieldset>
+            <fieldset>
+                <legend>Organization</legend>
+                <label>Organization's name* <input type="text" name="orgName" id="orgName" required></label>
+                <label>Organization's description <textarea name="orgDescription" id="orgDescription"
+                        rows="4"></textarea></label>
+            </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <button type="submit">Join the Lima chamber of commerce</button>
         </form>
+
+        <section id="membershipsDetail">
+            <div>
+                <h3>NP Membership</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officiis harum in odit natus
+                    molestiae libero similique incidunt, accusantium voluptatum temporibus tenetur distinctio error
+                    soluta quisquam obcaecati nesciunt sapiente perferendis.</p>
+                <p>Price:</p>
+                <p>Free*</p>
+            </div>
+            <div>
+                <h3>Bronze Membership</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officiis harum in odit natus
+                    molestiae libero similique incidunt, accusantium voluptatum temporibus tenetur distinctio error
+                    soluta quisquam obcaecati nesciunt sapiente perferendis.</p>
+                <p>Price:</p>
+                <p>$39.90</p>
+            </div>
+            <div>
+                <h3>Silver Membership</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officiis harum in odit natus
+                    molestiae libero similique incidunt, accusantium voluptatum temporibus tenetur distinctio error
+                    soluta quisquam obcaecati nesciunt sapiente perferendis.</p>
+                <p>Price:</p>
+                <p>$69.90</p>
+            </div>
+            <div>
+                <h3>Gold Membership</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officiis harum in odit natus
+                    molestiae libero similique incidunt, accusantium voluptatum temporibus tenetur distinctio error
+                    soluta quisquam obcaecati nesciunt sapiente perferendis.</p>
+                <p>Price:</p>
+                <p>$99.90</p>
+            </div>
+        </section>
     </main>
     <footer>
         <div>
@@ -73,6 +118,7 @@
         </p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/join.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
