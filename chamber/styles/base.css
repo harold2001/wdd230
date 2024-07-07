@@ -455,14 +455,15 @@ footer > div {
   width: 90%;
 }
 
-#thank-you-container h1 {
+#thank-you-container span {
   color: var(--headline-color-on-white);
   font-family: var(--heading-font);
   margin-bottom: 1rem;
+  font-size: 2rem;
+  display: block;
 }
 
 #thank-you-container p {
-  font-size: 1.2rem;
   font-family: var(--paragraph-font);
   margin-bottom: 1.5rem;
 }
