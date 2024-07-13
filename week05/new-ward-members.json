@@ -1,0 +1,132 @@
+[
+  {
+    "familyName": "Smith",
+    "dateMovedIn": "2023-05-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "John Smith",
+        "gender": "Male",
+        "birthdate": "1980-03-22"
+      },
+      {
+        "name": "Jane Smith",
+        "gender": "Female",
+        "birthdate": "1982-07-16"
+      },
+      {
+        "name": "Emily Smith",
+        "gender": "Female",
+        "birthdate": "2010-09-05"
+      },
+      {
+        "name": "Michael Smith",
+        "gender": "Male",
+        "birthdate": "2012-11-23"
+      }
+    ]
+  },
+  {
+    "familyName": "Johnson",
+    "dateMovedIn": "2023-02-10",
+    "numberOfPeople": 3,
+    "visitedByBishopric": false,
+    "familyMembers": [
+      {
+        "name": "James Johnson",
+        "gender": "Male",
+        "birthdate": "1975-06-15"
+      },
+      {
+        "name": "Laura Johnson",
+        "gender": "Female",
+        "birthdate": "1978-01-22"
+      },
+      {
+        "name": "Sarah Johnson",
+        "gender": "Female",
+        "birthdate": "2008-12-19"
+      }
+    ]
+  },
+  {
+    "familyName": "Williams",
+    "dateMovedIn": "2022-11-05",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Robert Williams",
+        "gender": "Male",
+        "birthdate": "1985-09-10"
+      },
+      {
+        "name": "Michelle Williams",
+        "gender": "Female",
+        "birthdate": "1987-04-28"
+      },
+      {
+        "name": "David Williams",
+        "gender": "Male",
+        "birthdate": "2010-02-14"
+      },
+      {
+        "name": "Anna Williams",
+        "gender": "Female",
+        "birthdate": "2013-07-30"
+      },
+      {
+        "name": "Sophia Williams",
+        "gender": "Female",
+        "birthdate": "2016-10-08"
+      }
+    ]
+  },
+  {
+    "familyName": "Brown",
+    "dateMovedIn": "2023-03-25",
+    "numberOfPeople": 2,
+    "visitedByBishopric": false,
+    "familyMembers": [
+      {
+        "name": "Richard Brown",
+        "gender": "Male",
+        "birthdate": "1965-12-17"
+      },
+      {
+        "name": "Patricia Brown",
+        "gender": "Female",
+        "birthdate": "1968-05-02"
+      }
+    ]
+  },
+  {
+    "familyName": "Jones",
+    "dateMovedIn": "2023-01-18",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Michael Jones",
+        "gender": "Male",
+        "birthdate": "1990-11-09"
+      },
+      {
+        "name": "Angela Jones",
+        "gender": "Female",
+        "birthdate": "1992-03-05"
+      },
+      {
+        "name": "Lucas Jones",
+        "gender": "Male",
+        "birthdate": "2015-06-18"
+      },
+      {
+        "name": "Ella Jones",
+        "gender": "Female",
+        "birthdate": "2017-08-23"
+      }
+    ]
+  }
+]
