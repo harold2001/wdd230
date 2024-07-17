@@ -166,8 +166,16 @@ footer p:first-child {
   text-align: center;
 }
 
-.card#information p {
+.card#information > p {
   margin: 20px;
+}
+
+.card#information > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 20px 0;
 }
 
 #profilePhoto {

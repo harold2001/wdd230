@@ -55,7 +55,7 @@
     <section class="card">
       <h2>Learning Activities</h2>
       <ul>
-        <li>
+        <!-- <li>
           Week 01: <a href="">Layout</a> | <a href="">Media Query</a> |
           <a href="">JS Pen</a>
         </li>
@@ -69,13 +69,16 @@
             href="week05/new-ward-members.json">New Ward Members JSON</a> | <a href="week05/prophets.html">Prophets</a>
           | <a href="week05/weather.html">Weather API</a>
         </li>
-        <li>Week 06:</li>
+        <li>Week 06:</li> -->
       </ul>
     </section>
     <section class="card" id="information">
       <h2>Information</h2>
-      <p>Toloria, Madagascar</p>
-      <p>76°F - Sunshine</p>
+      <p id="current-city"></p>
+      <div>
+        <img id="weather-icon" src="" alt="" height="50" width="50">
+        <p><span id="current-temp"></span></p>
+      </div>
       <p>Page Visits: <span class="visits"></span></p>
     </section>
   </main>
@@ -91,6 +94,8 @@
     </p>
     <p id="lastModified"></p>
   </footer>
+  <script src="scripts/links.js"></script>
+  <script src="scripts/weather.js"></script>
   <script src="scripts/getDates.js"></script>
   <script src="scripts/main.js"></script>
 </body>
