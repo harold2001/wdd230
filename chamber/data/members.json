@@ -1,0 +1,99 @@
+[
+  {
+    "businessName": "San Miguel Industrias",
+    "address": "Av. Materiales 2354, Cercado de Lima 15081",
+    "phone": "+51 (01) 3365100",
+    "website": "https://www.smi.com.pe/",
+    "logo": "https://www.smi.com.pe/images/logo.png",
+    "status": "gold"
+  },
+  {
+    "businessName": "GLOBAL PLASTIC SAC",
+    "address": "C. los Martillos, Lima 15311",
+    "phone": "+51 (01) 5221915",
+    "website": "http://www.globalplastic.pe/",
+    "logo": "http://www.globalplastic.pe/images/logo.png",
+    "status": "gold"
+  },
+  {
+    "businessName": "Power Automatismo Industriales E.I.R.L.",
+    "address": "Av. Argentina, Cercado de Lima 15082",
+    "phone": "+51 990 474 582",
+    "website": "http://www.powerautomatismo.com/",
+    "logo": "http://www.powerautomatismo.com/img/power-automatismo-industriales-eirl-1587772730.jpg",
+    "status": "silver"
+  },
+  {
+    "businessName": "PROTMASTER S.A.",
+    "address": "Jr, Jr. Cnel. Miguel Baquero Nº 156, Cercado de Lima 15082",
+    "phone": "+51 947 521 491",
+    "website": "https://protmaster.com.pe/",
+    "logo": "https://protmaster.com.pe/wp-content/uploads/2021/07/cropped-LOGO-PROTMASTER-1.png",
+    "status": "gold"
+  },
+  {
+    "businessName": "Sithemsa Del Peru S.A.C.",
+    "address": "Guillermo Dansey 1297, Cercado de Lima 1508",
+    "phone": "+51 (01) 4230646",
+    "website": "https://sithemsa.com/",
+    "logo": "https://sithemsa.com/wp-content/uploads/2019/12/sithemsa-gruas.png",
+    "status": "silver"
+  },
+
+  {
+    "businessName": "Global Forwarding Solutions",
+    "address": "Av. Ejercito Nro. 1180 Int. 907 Piso 9 - Edificio Time Magdalena del Mar",
+    "phone": "+51 984 727 905",
+    "website": "https://globalforwarding.com.pe/",
+    "logo": "https://globalforwarding.com.pe/img/logo2.png",
+    "status": "gold"
+  },
+  {
+    "businessName": "Industria Textil Del Pacifico S.A",
+    "address": "Av. Óscar R. Benavides 1560, Cercado de Lima 15082",
+    "phone": "+51 937 212 493",
+    "website": "https://www.intexpac.com/home.html",
+    "logo": "https://www.intexpac.com/images/home/logo.jpg",
+    "status": "silver"
+  },
+  {
+    "businessName": "Karly's Seguridad",
+    "address": "Av. Óscar R. Benavides 248, Cercado de Lima 15082",
+    "phone": "+51 (01) 4238709",
+    "website": "https://karlyseguridad.com.pe/",
+    "logo": "https://karlyseguridad.com.pe/wp-content/uploads/2021/04/cropped-LOGOKARLYSSOLUTIONSSAC-1024x576.png",
+    "status": "gold"
+  },
+  {
+    "businessName": "Grupo Miraya SAC",
+    "address": "Centro Commercial Plaza, Tda 1124, Piso:2, Int Pasaje A Avenida Huarochiri, 536, Cercado de Lima 15082",
+    "phone": "+51 (01) 4794027",
+    "website": "https://www.grupomiraya.com/",
+    "logo": "https://www.grupomiraya.com/images/logoEmpresa.svg",
+    "status": "silver"
+  },
+  {
+    "businessName": "Maquinas & Negocios SAC",
+    "address": "Av. Guillermo Dansey 523, Cercado de Lima 15082",
+    "phone": "+51 (01) 3321059",
+    "website": "https://mynsac.com/",
+    "logo": "https://mynsac.com/img/logo-1642025697.jpg",
+    "status": "gold"
+  },
+  {
+    "businessName": "Alicorp S.A.",
+    "address": "N°. 4793 Z.I. (ENTRE AV.ARGENTINA Y AV.ELMER FAUCETT), Av. Argentina, Carmen de La Legua - Reynoso 07006",
+    "phone": "+51 013150800",
+    "website": "https://www.alicorp.com.pe/pe/es/",
+    "logo": "https://www.alicorp.com.pe/static/images/logo-alicorp.png",
+    "status": "silver"
+  },
+  {
+    "businessName": "ANYPSA S.A.C.",
+    "address": "Au. Chillón Trapiche, Carabayllo 15318",
+    "phone": "+51 016139090",
+    "website": "https://www.anypsa.com.pe/",
+    "logo": "https://www.anypsa.com.pe/aplication/webroot/imgs/anypsa-logo.png",
+    "status": "gold"
+  }
+]
