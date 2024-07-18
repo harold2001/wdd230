@@ -32,7 +32,7 @@ function displayMembers(members) {
         <img src="${m.logo}" alt="${m.businessName}" />
         <h3>${m.businessName}</h3>
         <p>${m.phone}</p>
-        <a href="${m.website}" target="_blank">Page</a>
+        <a href="${m.website}" target="_blank">${m.website}</a>
       </section>`),
     ''
   );

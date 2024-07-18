@@ -151,4 +151,8 @@
     width: 100%;
     line-height: 21px;
   }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
