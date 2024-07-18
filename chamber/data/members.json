@@ -1,10 +1,10 @@
 [
   {
-    "businessName": "San Miguel Industrias",
+    "businessName": "Industrias San Miguel",
     "address": "Av. Materiales 2354, Cercado de Lima 15081",
     "phone": "+51 (01) 3365100",
-    "website": "https://www.smi.com.pe/",
-    "logo": "https://www.smi.com.pe/images/logo.png",
+    "website": "https://group-ism.com/",
+    "logo": "https://group-ism.com/wp-content/uploads/2023/05/ism-36-3.svg",
     "status": "gold"
   },
   {
@@ -20,7 +20,7 @@
     "address": "Av. Argentina, Cercado de Lima 15082",
     "phone": "+51 990 474 582",
     "website": "http://www.powerautomatismo.com/",
-    "logo": "http://www.powerautomatismo.com/img/power-automatismo-industriales-eirl-1587772730.jpg",
+    "logo": "https://powerautomatismo.com/wp-content/uploads/2024/02/logo-powera.svg",
     "status": "silver"
   },
   {
@@ -41,11 +41,11 @@
   },
 
   {
-    "businessName": "Global Forwarding Solutions",
+    "businessName": "DHL Global Forwarding",
     "address": "Av. Ejercito Nro. 1180 Int. 907 Piso 9 - Edificio Time Magdalena del Mar",
     "phone": "+51 984 727 905",
-    "website": "https://globalforwarding.com.pe/",
-    "logo": "https://globalforwarding.com.pe/img/logo2.png",
+    "website": "https://www.dhl.com/pe-es/home.html",
+    "logo": "https://www.dhl.com/content/dam/dhl/global/core/images/logos/dhl-logo.svg",
     "status": "gold"
   },
   {
@@ -69,7 +69,7 @@
     "address": "Centro Commercial Plaza, Tda 1124, Piso:2, Int Pasaje A Avenida Huarochiri, 536, Cercado de Lima 15082",
     "phone": "+51 (01) 4794027",
     "website": "https://www.grupomiraya.com/",
-    "logo": "https://www.grupomiraya.com/images/logoEmpresa.svg",
+    "logo": "https://www.grupomiraya.com/assets/img/LogoMiraya.svg",
     "status": "silver"
   },
   {
@@ -77,7 +77,7 @@
     "address": "Av. Guillermo Dansey 523, Cercado de Lima 15082",
     "phone": "+51 (01) 3321059",
     "website": "https://mynsac.com/",
-    "logo": "https://mynsac.com/img/logo-1642025697.jpg",
+    "logo": "https://mynsac.com/img/logo-1659135189.jpg",
     "status": "gold"
   },
   {

@@ -21,18 +21,23 @@ function showList() {
 async function getMembers() {
   const response = await fetch(membersURL);
   const data = await response.json();
-  displayLinks(data);
+  displayMembers(data);
 }
 
 function displayMembers(members) {
+  console.log(members);
   const content = members.reduce(
-    m => `		<section>
-			<img src="https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg" alt="Payson Utah Temple" />
-			<h3>Payson Utah</h3>
-			<p>2015</p>
-			<a href="https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng" target="_blank">Details</a>
-		</section>`
+    (acc, m) =>
+      (acc += `<section>
+        <img src="${m.logo}" alt="${m.businessName}" />
+        <h3>${m.businessName}</h3>
+        <p>${m.phone}</p>
+        <a href="${m.website}" target="_blank">Page</a>
+      </section>`),
+    ''
   );
+
+  directoryArticle.innerHTML = content;
 }
 
 getMembers();
