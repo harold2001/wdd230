@@ -486,30 +486,35 @@ footer > div {
 /* DIRECTORY */
 #directoryMain {
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: #fff;
   font-family: Roboto, Helvetica, sans-serif;
   display: block;
 }
 
 #directoryMain .menu {
-  margin: 1rem auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto 1rem auto;
   padding: 0.5rem;
-  background-color: #bed;
+  background-color: var(--secondary-color);
   text-align: center;
 }
 
 #directoryMain .menu button {
   padding: 1rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .grid section {
-  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   background-color: #eee;
   width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
@@ -524,16 +529,18 @@ footer > div {
 }
 
 .grid img {
-  border: 1px solid #fff;
-  box-shadow: 0 0 10px #333;
+  width: 70%;
+  height: 75px;
+  object-fit: contain;
 }
 
 .grid section > * {
   margin: 0.1rem;
 }
 
-.grid h3 {
-  font-family: 'Caveat', cursive;
+.grid section h3 {
+  font-weight: 400;
+  display: none;
 }
 
 .list {
@@ -542,37 +549,41 @@ footer > div {
 }
 
 .list section {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin: 0;
-  padding: 0.25rem;
+  padding: 1rem;
   width: 100%;
 }
 
-.list section > * {
-  margin: 0 1rem;
-}
-
 .list section img {
-  display: none; /* smaller viewports only */
-}
-
-.list section h3 {
-  font-size: 1rem;
-  font-family: Roboto, Helvetica, sans-serif;
+  display: none;
 }
 
 .list section:nth-child(even) {
-  background-color: #bed;
+  background-color: var(--accent1-color);
+}
+
+.list section h3 {
+  font-weight: 400;
+  display: grid;
+  align-items: center;
 }
 
 #directoryMain section h3 {
-  font-size: 1.5rem;
+  /* font-family: var(--heading-font); */
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+#directoryMain section p:nth-child(3) {
+  margin-top: 15px;
 }
 
 #directoryMain section p {
-  font-weight: 600;
-  font-size: smaller;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 
 #directoryMain section a {
@@ -580,9 +591,5 @@ footer > div {
   font-size: 0.85rem;
   color: navy;
   letter-spacing: 1.1pt;
-}
-
-img {
-  height: 75px;
-  max-width: 100%; /* Images are jerks - Seattle*/
+  margin-top: 5px;
 }

@@ -31,6 +31,7 @@ function displayMembers(members) {
       (acc += `<section>
         <img src="${m.logo}" alt="${m.businessName}" />
         <h3>${m.businessName}</h3>
+        <p>${m.address}</p>
         <p>${m.phone}</p>
         <a href="${m.website}" target="_blank">${m.website}</a>
       </section>`),

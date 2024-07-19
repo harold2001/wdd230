@@ -154,5 +154,29 @@
 
   .grid {
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    align-items: center;
+  }
+
+  #directoryMain section h3 {
+    font-size: 1rem;
+  }
+
+  #directoryMain section p:nth-child(3) {
+    margin-top: 0;
+  }
+
+  #directoryMain section p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  #directoryMain section a {
+    margin-top: 0;
   }
 }
