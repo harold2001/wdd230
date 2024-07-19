@@ -38,7 +38,7 @@ function displayMembers(members) {
     ''
   );
 
-  directoryArticle.innerHTML = content;
+  directoryArticle.innerHTML += content;
 }
 
 getMembers();
