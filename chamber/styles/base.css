@@ -79,8 +79,6 @@ footer > div {
 #footerP {
   display: flex;
   flex-direction: column;
-  /* color: yellow; */
-  color: var(--accent1-color);
   gap: 0.4rem;
 }
 
