@@ -131,6 +131,8 @@ footer > div {
 #weatherSection > img {
   grid-column: 1/2;
   grid-row: 2/4;
+  width: 90px;
+  object-fit: contain;
 }
 
 #weatherSection p:nth-child(5),

@@ -60,13 +60,13 @@
         </section>
         <section class="firstSections" id="weatherSection">
             <h2>Weather</h2>
-            <img src="https://picsum.photos/50" alt="Event image">
-            <p>33°C</p>
-            <p><strong>Partly Cloudy</strong></p>
+            <img src="https://picsum.photos/50" alt="Event image" id="weather-icon">
+            <p id="current-temp"></p>
+            <p><strong id="current-weather"></strong></p>
             <p>Humidity:</p>
-            <p>35%</p>
+            <p id="current-humidity"></p>
             <p>Wind Chill:</p>
-            <p>N/A</p>
+            <p id="current-wind"></p>
         </section>
         <h2 id="spotlightsSubtitle">Member Spotlights</h2>
         <div id="spotlightsContainer">
@@ -106,6 +106,7 @@
         </p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 

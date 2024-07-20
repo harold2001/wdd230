@@ -3,6 +3,9 @@ const nav = document.querySelector('nav');
 const year = new Date().getFullYear();
 const lastVisitMessage = getLastVisitMessage();
 const lastVisitSection = document.querySelector('#lastVisitSection');
+const baseURL = 'https://harold2001.github.io/wdd230/';
+const membersURL =
+  'https://harold2001.github.io/wdd230/chamber/data/members.json';
 
 function getLastVisitMessage() {
   const now = new Date();
@@ -39,3 +42,32 @@ hamButton.addEventListener('click', () => {
   nav.classList.toggle('open');
   hamButton.classList.toggle('open');
 });
+
+async function getMembers() {
+  const response = await fetch(membersURL);
+  const data = await response.json();
+  displayMembers(data);
+}
+
+function displayMembers(members) {
+  // console.log(members);
+  const silverGoldMembers = members.filter(
+    m => m.status === 'gold' || m.status === 'silver'
+  );
+  console.log(silverGoldMembers);
+  // const content = members.reduce(
+  //   (acc, m) =>
+  //     (acc += `<section>
+  //       <img src="${m.logo}" alt="${m.businessName}" />
+  //       <h3>${m.businessName}</h3>
+  //       <p>${m.address}</p>
+  //       <p>${m.phone}</p>
+  //       <a href="${m.website}" target="_blank">${m.website}</a>
+  //     </section>`),
+  //   ''
+  // );
+
+  // directoryArticle.innerHTML += content;
+}
+
+getMembers();
