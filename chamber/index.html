@@ -41,7 +41,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="mainHome">
         <div class="hero">
             <picture>
                 <source media="(max-width: 400px)" srcset="images/lima-small.webp">
@@ -53,6 +53,7 @@
             </div>
         </div>
         <section class="firstSections" id="eventsSection">
+            <span id="eventsClose">❌</span>
             <h2>Events</h2>
             <h3>Ribbon Cutting - The Diamond Shack</h3>
             <p>Join us for the grand opening of the Diamond Shack, Thursday at 1:00 p.m.</p>
@@ -60,37 +61,18 @@
         </section>
         <section class="firstSections" id="weatherSection">
             <h2>Weather</h2>
-            <img src="https://picsum.photos/50" alt="Event image" id="weather-icon">
-            <p id="current-temp"></p>
-            <p><strong id="current-weather"></strong></p>
-            <p>Humidity:</p>
-            <p id="current-humidity"></p>
-            <p>Wind Chill:</p>
-            <p id="current-wind"></p>
+            <div>
+                <img src="https://picsum.photos/50" alt="Event image" id="weather-icon">
+                <p id="current-temp"></p>
+                <p><strong id="current-weather"></strong></p>
+                <p>Humidity:</p>
+                <p id="current-humidity"></p>
+                <p>Wind Chill:</p>
+                <p id="current-wind"></p>
+            </div>
         </section>
         <h2 id="spotlightsSubtitle">Member Spotlights</h2>
         <div id="spotlightsContainer">
-            <section class="spotlightsCard">
-                <h2>Thankful Transport</h2>
-                <p>"We get it there for you!</p>
-                <p>hello@thankfultransport.com</p>
-                <p>+999-9999-9999</p>
-                <p>Website</p>
-            </section>
-            <section class="spotlightsCard">
-                <h2>Code Primera</h2>
-                <p>After school coding!</p>
-                <p>contact@codeprimera.com</p>
-                <p>+999-9999-9999</p>
-                <p>Website</p>
-            </section>
-            <section class="spotlightsCard">
-                <h2>Build A Treefort</h2>
-                <p>Over 1000 Plans!</p>
-                <p>builda@treefort.com</p>
-                <p>+888-8888-8888</p>
-                <p>Website</p>
-            </section>
         </div>
     </main>
     <footer>
@@ -106,6 +88,7 @@
         </p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/home.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/main.js"></script>
 </body>

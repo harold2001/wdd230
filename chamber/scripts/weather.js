@@ -15,10 +15,10 @@ const weathers = [
     url: `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiID}&units=imperial`,
     displayFn: displayCurrent,
   },
-  // {
-  //   url: `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiID}&units=imperial`,
-  //   displayFn: displayForecast,
-  // },
+  {
+    url: `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiID}&units=imperial`,
+    displayFn: displayForecast,
+  },
 ];
 
 for (const weather of weathers) {
@@ -53,6 +53,40 @@ function displayCurrent(data) {
 
 function displayForecast(data) {
   console.log(data);
+  const { list } = data;
+  const today = new Date().getDate();
+
+  const days = {};
+  for (const forecast of list) {
+    const fecha = new Date(forecast.dt_txt);
+    const day = fecha.getDate();
+
+    if (day == today || day >= today + 4) continue;
+
+    const max = forecast.main.temp_max;
+    const min = forecast.main.temp_min;
+
+    if (!days.hasOwnProperty(day)) {
+      days[day] = {
+        tempMax: max,
+        tempMin: min,
+        times: 1,
+      };
+    } else {
+      days[day].tempMax += max;
+      days[day].tempMin += min;
+      days[day].times += 1;
+    }
+  }
+
+  console.log(days);
+  for (const key in days) {
+    const maxAverage = days[key].tempMax / days[key].times;
+    const minAverage = days[key].tempMin / days[key].times;
+    console.log(key);
+    console.log(maxAverage);
+    console.log(minAverage);
+  }
   // currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
   // currentWeather.textContent = data.weather[0].main;
   // currentHumidity.textContent = `${data.main.humidity}%`;
