@@ -36,12 +36,57 @@
   #eventsSection {
     grid-column: 1/2;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
   }
 
   #weatherSection {
     grid-column: 2/5;
-    /* grid-column: 1/4; */
     margin: 0;
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 55px;
+  }
+
+  #weatherSection.active {
+    height: auto;
+  }
+
+  #weatherSection.active > #weatherCards > .weatherCard:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  #weatherSection h3:first-child {
+    display: none;
+  }
+
+  #weatherCards {
+    grid-column: 2/5;
+    margin: 0;
+  }
+
+  #weatherCards > .weatherCard:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  #btnShowForecast {
+    display: block;
+    position: absolute;
+    bottom: 9px;
+  }
+
+  #weatherBar {
+    width: 100%;
+  }
+
+  #weatherForecast {
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
   }
 
   #discoverMain {

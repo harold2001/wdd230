@@ -4,11 +4,10 @@ const currentHumidity = document.querySelector('#current-humidity');
 const currentWind = document.querySelector('#current-wind');
 const currentCity = document.querySelector('#current-city');
 const weatherIcon = document.querySelector('#weather-icon');
+const weatherForecast = document.querySelector('#weatherForecast');
 const latitude = '-12.01';
 const longitude = '-77.03';
 const apiID = 'f26a1d2c7387a78efdda84903fecbb7f';
-// const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiID}&units=imperial`;
-// const url2 = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&cnt=3&appid=${apiID}&units=imperial`;
 
 const weathers = [
   {
@@ -52,7 +51,6 @@ function displayCurrent(data) {
 }
 
 function displayForecast(data) {
-  console.log(data);
   const { list } = data;
   const today = new Date().getDate();
 
@@ -71,6 +69,9 @@ function displayForecast(data) {
         tempMax: max,
         tempMin: min,
         times: 1,
+        icon: forecast.weather[0].icon,
+        dt_txt: forecast.dt_txt,
+        weather: forecast.weather[0].main,
       };
     } else {
       days[day].tempMax += max;
@@ -79,23 +80,26 @@ function displayForecast(data) {
     }
   }
 
-  console.log(days);
   for (const key in days) {
-    const maxAverage = days[key].tempMax / days[key].times;
-    const minAverage = days[key].tempMin / days[key].times;
-    console.log(key);
-    console.log(maxAverage);
-    console.log(minAverage);
+    const forecast = days[key];
+    const maxAverage = forecast.tempMax / forecast.times;
+    const minAverage = forecast.tempMin / forecast.times;
+    const date = new Date(forecast.dt_txt);
+    weatherForecast.innerHTML += `
+    <div class="weatherCard">
+      <span>${date.toLocaleDateString()}</span>
+      <img src="https://openweathermap.org/img/w/${
+        forecast.icon
+      }.png" alt="Weather image">
+      <p>${data.city.name}</p>
+      <p><strong>${forecast.weather}</strong></p>
+      <p>Max:</p>
+      <p>${maxAverage.toFixed(1)}</p>
+      <p>Min:</p>
+      <p>${minAverage.toFixed(1)}</p>
+    </div>
+    `;
   }
-  // currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
-  // currentWeather.textContent = data.weather[0].main;
-  // currentHumidity.textContent = `${data.main.humidity}%`;
-  // currentWind.textContent = data.wind.speed;
-
-  // const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  // let desc = data.weather[0].description;
-  // weatherIcon.setAttribute('src', iconsrc);
-  // weatherIcon.setAttribute('alt', desc);
 }
 
 // apiFetch();

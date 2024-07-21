@@ -61,14 +61,23 @@
         </section>
         <section class="firstSections" id="weatherSection">
             <h2>Weather</h2>
-            <div>
-                <img src="https://picsum.photos/50" alt="Event image" id="weather-icon">
-                <p id="current-temp"></p>
-                <p><strong id="current-weather"></strong></p>
-                <p>Humidity:</p>
-                <p id="current-humidity"></p>
-                <p>Wind Chill:</p>
-                <p id="current-wind"></p>
+            <div id="weatherCards">
+                <h3>Current</h3>
+                <div class="weatherCard">
+                    <span>Today</span>
+                    <img src="https://picsum.photos/50" alt="Event image" id="weather-icon">
+                    <p id="current-temp"></p>
+                    <p><strong id="current-weather"></strong></p>
+                    <p>Humidity:</p>
+                    <p id="current-humidity"></p>
+                    <p>Wind Chill:</p>
+                    <p id="current-wind"></p>
+                </div>
+                <button id="btnShowForecast">Show forecast</button>
+                <div id="weatherBar"></div>
+                <h3>Forecast</h3>
+                <div id="weatherForecast">
+                </div>
             </div>
         </section>
         <h2 id="spotlightsSubtitle">Member Spotlights</h2>

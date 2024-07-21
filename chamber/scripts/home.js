@@ -2,6 +2,10 @@ const spotlightsContainer = document.querySelector('#spotlightsContainer');
 const eventsCloseBtn = document.querySelector('#eventsClose');
 const eventsSection = document.querySelector('#eventsSection');
 const weatherSection = document.querySelector('#weatherSection');
+const containerForecast = document.querySelector('#weatherForecast');
+const btnShowForecast = document.querySelector('#btnShowForecast');
+const today = new Date().getDay();
+const bannerDays = [1, 2, 3];
 const membersURL =
   'https://harold2001.github.io/wdd230/chamber/data/members.json';
 
@@ -42,6 +46,20 @@ function getRandomElements(arr, numElements) {
 eventsCloseBtn.addEventListener('click', () => {
   eventsSection.remove();
   weatherSection.style.gridColumn = '1 / 5';
+  containerForecast.style.width = 'auto';
 });
+
+btnShowForecast.addEventListener('click', () => {
+  weatherSection.classList.toggle('active');
+  btnShowForecast.textContent = weatherSection.classList.contains('active')
+    ? 'Hide forecast'
+    : 'Show forecast';
+});
+
+if (!bannerDays.includes(today)) {
+  eventsSection.remove();
+  weatherSection.style.gridColumn = '1 / 5';
+  containerForecast.style.width = 'auto';
+}
 
 getMembers();
