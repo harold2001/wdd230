@@ -1,7 +1,6 @@
 const gridbutton = document.querySelector('#grid');
 const listbutton = document.querySelector('#list');
 const display = document.querySelector('article');
-const baseURL = 'https://harold2001.github.io/wdd230/';
 const membersURL =
   'https://harold2001.github.io/wdd230/chamber/data/members.json';
 const directoryArticle = document.querySelector('#directoryArticle');
@@ -25,7 +24,6 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-  console.log(members);
   const content = members.reduce(
     (acc, m) =>
       (acc += `<section>

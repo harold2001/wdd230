@@ -560,6 +560,7 @@ footer > div {
   background-color: #fff;
   font-family: Roboto, Helvetica, sans-serif;
   display: block;
+  max-width: 1000px;
 }
 
 #directoryMain .menu {

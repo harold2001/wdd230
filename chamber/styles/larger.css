@@ -94,6 +94,7 @@
     grid-template-columns: 400px auto;
     grid-template-rows: repeat(5, auto);
     margin: 30px auto;
+    max-width: 1000px;
   }
 
   #discoverMain h1 {
@@ -102,8 +103,12 @@
   }
 
   #joinMain {
+    display: grid;
     grid-template-columns: 450px auto;
     grid-template-rows: auto;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: auto;
   }
 
   #lastVisitSection {
